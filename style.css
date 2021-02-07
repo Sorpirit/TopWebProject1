@@ -35,7 +35,6 @@ main div p.manga-title {
 
 main div div.manga-picture-container {
 	height: calc(100% - 52px);
-	background-image: url(https://is1.sh-cdn.com/images/5/8/b/3/252714/4fed57b1.jpg);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position-x: center;
