@@ -17,3 +17,26 @@ header div.logo-container h1 {
 	color: rgb(53, 53, 224);
 	user-select: none;
 }
+
+main div.manga-container {
+	width: 600px;
+	margin: auto;
+	background-color: rgb(53, 53, 224);
+	height: calc(100vh - 48px);
+}
+
+main div p.manga-title {
+	text-align: center;
+	padding: 10px 0;
+	font-size: 24px;
+	line-height: 2rem;
+	color: orange;
+}
+
+main div div.manga-picture-container {
+	height: calc(100% - 52px);
+	background-image: url(https://is1.sh-cdn.com/images/5/8/b/3/252714/4fed57b1.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position-x: center;
+}
