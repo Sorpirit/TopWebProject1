@@ -1,4 +1,6 @@
 const mangaPictureContainer = document.querySelector('div.manga-picture-container');
+const prevButton = document.getElementById('prev');
+const nextButton = document.getElementById('next');
 const pictures = [
 	'https://is1.sh-cdn.com/images/5/8/b/3/252714/4fed57b1.jpg',
 	'https://is2.sh-cdn.com/images/5/8/b/3/252714/7f66bdd4.jpg',
@@ -46,3 +48,20 @@ const pictures = [
 	'https://is2.sh-cdn.com/images/5/8/b/3/252714/a8e4a9a6.jpg',
 	'https://is1.sh-cdn.com/images/5/8/b/3/252714/c9abaade.jpg',
 ];
+
+let currentIndex = 0;
+mangaPictureContainer.style.backgroundImage = `url(${pictures[currentIndex]})`;
+
+prevButton.addEventListener('click', () => {
+	if (currentIndex > 0) {
+		currentIndex--;
+		mangaPictureContainer.style.backgroundImage = `url(${pictures[currentIndex]})`;
+	}
+});
+
+nextButton.addEventListener('click', () => {
+	if (currentIndex < pictures.length - 1) {
+		currentIndex++;
+		mangaPictureContainer.style.backgroundImage = `url(${pictures[currentIndex]})`;
+	}
+});
